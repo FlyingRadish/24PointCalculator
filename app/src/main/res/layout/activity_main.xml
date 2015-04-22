@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/activity_title"
+        layout="@layout/base_activity_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_title"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_show_message_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:text="show message dialog" />
+
+        <Button
+            android:id="@+id/btn_show_toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:text="show toast" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edit_num_a"
+                android:layout_width="50dp"
+                android:layout_margin="8dp"
+                android:inputType="number"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edit_num_b"
+                android:layout_width="50dp"
+                android:layout_margin="8dp"
+                android:inputType="number"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edit_num_c"
+                android:layout_width="50dp"
+                android:layout_margin="8dp"
+                android:inputType="number"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edit_num_d"
+                android:layout_width="50dp"
+                android:layout_margin="8dp"
+                android:inputType="number"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_try_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:text="try" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <org.houxg.monkeyhey.util.logger.LogView
+                android:id="@+id/logview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
